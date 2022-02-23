@@ -1,3 +1,9 @@
+// Menghilangkan alert secara otomatis dengan duari 5 detik
+setTimeout(() => {
+  document.getElementById("alert").style.display = "none";
+}, 5000);
+
+// Menampilkan form ketika menekan tombol edit
 function showForm() {
   let card = document.getElementById("card");
   card.style.display = "block";
@@ -25,6 +31,7 @@ function showForm() {
   document.getElementById("email").value = val_email;
 }
 
+// Menyimpan perubahan profile ketika tombol submit ditekan
 function submitForm() {
   let card = document.getElementById("card");
   card.style.display = "none";
